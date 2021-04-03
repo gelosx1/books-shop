@@ -2,48 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69eef89a-6c18-4d09-a398-d896177f8abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/AccountDataAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/BookDataAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/IsLoginAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/StandartRequestActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/SwitchPageAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/account/LoginUserAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/account/PurchaseBookAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/account/RegisterNewUserAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/account/getPurchasedBooksAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/book/AddBookAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/book/DeleteBookAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/book/FindBookAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/book/FindBooksByAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/book/UpdateBookAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminArea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UserArea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/GetPurchasedBooks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/LogOut.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/PurchaseBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/book/AddBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/book/BooksList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/book/DeleteBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/book/FindBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/book/UpdateBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/const/Constant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/AccountReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/BookReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/RequestReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/spin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BooksPagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/SwitchPageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/SwitchPageAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/account/getPurchasedBooksAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/account/getPurchasedBooksAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/book/AddBookAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/book/AddBookAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/book/FindBookAction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/book/FindBooksByAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/book/FindBooksByAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AdminArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdminArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/GetPurchasedBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/GetPurchasedBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/PurchaseBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/PurchaseBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/book/AddBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/AddBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/book/BooksList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/BooksList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/book/DeleteBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/DeleteBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/book/FindBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/FindBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/book/UpdateBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/UpdateBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/const/Constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/const/Constant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/BookReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/BookReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,25 +57,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../training" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\components" />
-      <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\components\account" />
-      <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\actions\account" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gelos\WebstormProjects\books-shop\public" />
       <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\reducers" />
       <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\components" />
       <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\actions" />
       <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\store" />
-      <recent name="C:\Users\gelos\WebstormProjects\books-shop\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\components" />
+      <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\components\account" />
+      <recent name="C:\Users\gelos\WebstormProjects\books-shop\src\actions\account" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -117,34 +104,60 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617171072553</updated>
-      <workItem from="1617171074651" duration="70069000" />
+      <workItem from="1617171074651" duration="72438000" />
+      <workItem from="1617403854107" duration="3228000" />
+      <workItem from="1617409642887" duration="54864000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1617276857539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617276857539</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1617276856367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617276856367" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617178772492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617178772492" />
-    <state width="1899" height="128" key="GridCell.Tab.0.bottom" timestamp="1617221358488">
+    <state x="828" y="414" width="264" height="262" key="Github.ShareDialog" timestamp="1617278549482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="128" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617221358488" />
-    <state width="1899" height="128" key="GridCell.Tab.0.center" timestamp="1617221358487">
+    <state x="828" y="414" width="264" height="262" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617278549482" />
+    <state width="1899" height="128" key="GridCell.Tab.0.bottom" timestamp="1617410093836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="128" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617221358487" />
-    <state width="1899" height="128" key="GridCell.Tab.0.left" timestamp="1617221358487">
+    <state width="1899" height="128" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617410093836" />
+    <state width="1899" height="128" key="GridCell.Tab.0.center" timestamp="1617410093835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="128" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617221358487" />
-    <state width="1899" height="128" key="GridCell.Tab.0.right" timestamp="1617221358488">
+    <state width="1899" height="128" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617410093835" />
+    <state width="1899" height="128" key="GridCell.Tab.0.left" timestamp="1617410093835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="128" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617221358488" />
+    <state width="1899" height="128" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617410093835" />
+    <state width="1899" height="128" key="GridCell.Tab.0.right" timestamp="1617410093835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="128" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617410093835" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1617278528327">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617278528327" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1617206921091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

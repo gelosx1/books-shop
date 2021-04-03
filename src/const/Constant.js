@@ -1,25 +1,10 @@
-import React from "react";
-// import User from "../components/User";
-// import ChangePassword from "../components/ChangePassword";
-// import DeleteUser from "../components/DeleteUser";
-// import EditUser from "../components/EditUser";
-// import Roles from "../components/Roles";
-
-//export const urlApiAccount = 'https://webaccounting.herokuapp.com/account';
 export const urlApiAccount = 'http://localhost:8080';
-
-//export const pages = {
-    // home : <User/>,
-    // password: <ChangePassword/>,
-    // delete: <DeleteUser/>,
-    // edit: <EditUser/>,
-    // roles: <Roles/>
-//};
 export const publisherRadio = 'publisherRadio';
 export const authorRadio = 'authorRadio';
 export const isbnRadio = 'isbnRadio';
 export const all = 'all';
-
+export const defaultActivePage = 1;
+export const itemsOnPage = 5;
 export const errorMessage = 'Something went wrong - error: '
 
 export const handleResponseHeader = (response) => {
@@ -35,5 +20,22 @@ export const handleRequestHeaders = () => {
     headers.append('Content-Type', 'application/json');
     headers.append('X-Token', `${_token}`);
     return headers
+};
+
+
+export const findBookSwitcher = (type, searchQuery, active, func) => {
+        switch (type) {
+            case isbnRadio:
+                func(`${urlApiAccount}/book/id/${searchQuery}`);
+                break;
+            case authorRadio:
+                func(`${urlApiAccount}/book/author/${searchQuery}/page/${active}/items/${itemsOnPage}`);
+                break;
+            case publisherRadio:
+                func(`${urlApiAccount}/book/publisher/${searchQuery}/page/${active}/items/${itemsOnPage}`);
+                break;
+            default:func(`${urlApiAccount}/book/all/page/${active}/items/${itemsOnPage}`);
+        }
+
 };
 

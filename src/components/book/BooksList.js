@@ -1,24 +1,23 @@
 import React, {useEffect} from 'react';
 import {bindActionCreators} from "redux";
-import {updateBook} from "../../actions/book/UpdateBookAction";
 import {connect} from "react-redux";
 import PurchaseBook from "../account/PurchaseBook";
 import DeleteBook from "./DeleteBook";
 import UpdateBook from "./UpdateBook";
-import {urlApiAccount} from "../../const/Constant";
+import {itemsOnPage, urlApiAccount} from "../../const/Constant";
 import {findBooksBy} from "../../actions/book/FindBooksByAction";
 
 const BooksList = (props) => {
 
     useEffect(()=>{
-        props.findBooksBy(`${urlApiAccount}/book/all`);
+        props.findBooksBy(`${urlApiAccount}/book/all/page/${1}/items/${itemsOnPage}`);
     },[]);
 
         return (
             <div className={'main'} style={{alignItems: "center"}}>
                 <h3>Books List</h3>
-                <div className={'table'}>
-                    <div style={{height: 24 + 'rem'}}>
+                <div className={'books-table'}>
+                    <div style={{marginTop: 1 + 'rem'}}>
                         <table>
                             <thead>
                             <tr>
@@ -26,9 +25,10 @@ const BooksList = (props) => {
                                 <th>Title</th>
                                 <th>Author</th>
                                 <th>Publisher</th>
-                                {!props.isListPurchased && <th>Purchase</th>}
-                                {!props.isListPurchased && props.isAdminLogin && <th>Delete</th>}
                                 {!props.isListPurchased && props.isAdminLogin && <th>Update book</th>}
+                                {!props.isListPurchased && props.isAdminLogin && <th>Delete</th>}
+                                {!props.isListPurchased && <th>Purchase</th>}
+
                             </tr>
                             </thead>
                             <tbody>
@@ -40,12 +40,12 @@ const BooksList = (props) => {
                                         <span
                                             key={author.name + index}>{author.name}{item.authors.length - 1 !== index && ','}</span>)}</td>
                                     <td key={item.isbn + 4}>{item.publisher}</td>
-                                    {!props.isListPurchased &&
-                                    <td key={item.isbn + 5}>{<PurchaseBook isbn={item.isbn}/>}</td>}
-                                    {!props.isListPurchased && props.isAdminLogin &&
-                                    <td key={item.isbn + 6}>{<DeleteBook isbn={item.isbn}/>}</td>}
                                     {!props.isListPurchased && props.isAdminLogin &&
                                     <td key={item.isbn + 7}>{<UpdateBook isbn={item.isbn}/>}</td>}
+                                    {!props.isListPurchased && props.isAdminLogin &&
+                                    <td key={item.isbn + 6}>{<DeleteBook isbn={item.isbn}/>}</td>}
+                                    {!props.isListPurchased &&
+                                    <td key={item.isbn + 5}>{<PurchaseBook isbn={item.isbn}/>}</td>}
                                 </tr>
                             )}
                             </tbody>

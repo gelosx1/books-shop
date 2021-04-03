@@ -2,6 +2,7 @@ import React, {useRef, useState} from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {addBook} from "../../actions/book/AddBookAction";
+import {Button} from "react-bootstrap";
 
 const AddBook = (props) => {
     const[author,setAuthor] = useState('');
@@ -48,18 +49,18 @@ const AddBook = (props) => {
 
     return (
         <div className={'area'} style={{flexDirection: "column"}}>
-            <label htmlFor={"authors"}>Add book</label>
-            <form id={'authors'} onSubmit={handleOneMoreAuthor}>
+            <label htmlFor={"authors"} style={{color: 'black'}}>Add new book</label>
+            <form className={'main-form'} id={'authors'} onSubmit={handleOneMoreAuthor}>
                 <label htmlFor={"author"}>Author</label>
                 <input ref={authorRef}
                        id={'author'}
                        type="text"
                        value={author}
                        onChange={handleAuthorChange}/>
-                       <button type={'submit'}>one more</button>
+                <Button variant="info" type={'submit'}>one more</Button>
             </form>
                 <label htmlFor={"add"}>Book data</label>
-                <form id={'add'} onSubmit={handleAdd}>
+                <form className={'main-form'} id={'add'} onSubmit={handleAdd}>
                 <label htmlFor={"isbn"}>Isbn</label>
                 <input id={'isbn'}
                        type="text"
@@ -75,7 +76,7 @@ const AddBook = (props) => {
                        type="text"
                        value={publisher}
                        onChange={handlePublisherChange}/>
-                <button type={'submit'}>Add book</button>
+                    <Button variant={'success'} type={'submit'}>Add book</Button>
             </form>
         </div>
     );

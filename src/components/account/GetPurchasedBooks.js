@@ -5,7 +5,7 @@ import {getPurchasedBooks} from "../../actions/account/getPurchasedBooksAction";
 
 const GetPurchasedBooks = (props) => {
     const handlePurchase = () => {
-        props.user && props.getPurchasedBooks(props.user);
+        props.user && props.getPurchasedBooks(props.user, props.activePage);
     };
     return (
         <div>
@@ -22,7 +22,8 @@ function mapDispatchToProps(dispatch) {
 
 function mapStateToProps(state) {
     return {
-        user: state.accountData.user
+        user: state.accountData.user,
+        activePage: state.bookData.active
     }
 }
 

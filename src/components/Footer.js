@@ -15,10 +15,9 @@ function Footer(props) {
     }, [props, props.info]);
 
     const renderSpin = () => {
-        console.log(process)
         return (
             <div className={'fixed-bottom'}>
-                <img src={`${process.env.PUBLIC_URL}/spin.gif`} alt={'pending...'}/>
+                <img style={{width: 3 + 'rem'}} src={`${process.env.PUBLIC_URL}/spin.gif`} alt={'pending...'}/>
             </div>
         );
     };
@@ -37,8 +36,7 @@ function Footer(props) {
 
 function mapStateToProps(state) {
     return {
-       // info: state.userLogin.info
-        state
+        info: state.userLogin.info
     };
 }
 

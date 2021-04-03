@@ -2,6 +2,7 @@ import React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {deleteBook} from "../../actions/book/DeleteBookAction";
+import {Button} from "react-bootstrap";
 
 const DeleteBook = (props) => {
 
@@ -12,7 +13,7 @@ const DeleteBook = (props) => {
 
     return (
         <div>
-            <button onClick={handleDelete}>Delete</button>
+            <Button variant={'danger'} onClick={handleDelete}>Delete</Button>
         </div>
     );
 };

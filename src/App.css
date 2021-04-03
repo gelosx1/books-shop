@@ -11,6 +11,9 @@
 
 table, th, td {
   border: 1px solid #867f72;
+  table-layout: auto !important;
+  max-width:100%;
+  white-space:nowrap;
 }
 
 .main{
@@ -18,26 +21,27 @@ table, th, td {
   flex-direction: column;
 }
 
-.table{
+.books-table{
   overflow-y: auto;
-  height: 24rem;
-  width: 50rem;
+  height: 21rem;
+  width: 47rem;
   display: flex;
   justify-content: center;
   background-color: #262637;
-  align-items: center;
+  /*align-items: center;*/
   box-shadow: 0 0 20px 3px white;
   border-radius: 10px;
 }
 
 .area{
-  height: 7rem;
-  display: flex;
-  justify-content: center;
-  background-color: #3e3e61;
-  align-items: center;
+  height: 10rem;
+  /* display: flex; */
+  /* justify-content: center; */
+  background-color: #3e3e6117;
+  /* align-items: center; */
   box-shadow: inset 0 0 10px 3px white;
   border-radius: 5px;
+  /*text-shadow: 1px 1px 2px #19191d;*/
 }
 
 input{
@@ -47,6 +51,10 @@ input{
 .link{
   color: burlywood;
   background-color: #5a4d48;
+  width: 12rem;
+  height: 1.7rem;
+  border: 1px solid #cdb6b6;
+  border-radius: 3px;
 }
 
 .link a{
@@ -58,3 +66,89 @@ input{
   color: white;
 }
 
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.main-form{
+  background-color: #51515175;
+}
+
+.main-accordion{
+  /*position: fixed;*/
+  top: 2rem;
+}
+
+.radio-toolbar{
+  background-color: #51515175;
+}
+
+.find-submit{
+  background-color: #90909075;
+}
+
+.find-submit input{
+  border: 2px solid #83a8b5;
+  border-radius: 5px;
+}
+
+.main-form input{
+  width: 10rem;
+}
+
+.main-admin{
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #28a78494;
+  color: white;
+  min-width: 100vw;
+  top: -3rem;
+  position: relative;
+}
+
+header h1{
+  font-size: 4.7rem;
+}
+
+.accord-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.login-reg{
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.login-reg a:hover{
+  text-decoration: none;
+}
+
+.reg-form{
+  display: inline-flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.relog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.relog-main{
+  background-color: #28363a;
+  width: 31rem;
+}

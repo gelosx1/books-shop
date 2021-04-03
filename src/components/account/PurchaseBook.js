@@ -3,6 +3,7 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {purchaseBook} from "../../actions/account/PurchaseBookAction";
 import {Redirect} from "react-router-dom";
+import {Button} from "react-bootstrap";
 
 const PurchaseBook = (props) => {
     const [redirect,setRedirect] = useState(false);
@@ -19,7 +20,7 @@ const PurchaseBook = (props) => {
     };
         return (
             <div>
-                {!redirect ? <button onClick={handlePurchase}>purchase</button> : <Redirect to={'/login'}/>}
+                {!redirect ? <Button variant={'success'} onClick={handlePurchase}>purchase</Button> : <Redirect to={'/login'}/>}
             </div>
         );
     };

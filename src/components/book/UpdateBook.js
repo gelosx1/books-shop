@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {updateBook} from "../../actions/book/UpdateBookAction";
+import {Button} from "react-bootstrap";
 
 const UpdateBook = (props) => {
     const[title,setTitle] = useState('');
@@ -21,12 +22,12 @@ const UpdateBook = (props) => {
 
     return (
         <div>
-            <form id={'newTitle'} onSubmit={handleUpdate}>
+            <form  onSubmit={handleUpdate}>
                 <input type="text"
                        value={title}
                        placeholder={'new title'}
                        onChange={handleChange}/>
-                <button type={'submit'}>Update book</button>
+                <Button variant={'info'} type={'submit'}>Update</Button>
             </form>
         </div>
     );

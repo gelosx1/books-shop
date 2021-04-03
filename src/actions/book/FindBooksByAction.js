@@ -1,6 +1,7 @@
-import {clientRequest, responseError, responseSuccess} from "../StandartRequestActions";
+import {clientRequest, responseError} from "../StandartRequestActions";
 import {errorMessage, handleRequestHeaders, handleResponseHeader} from "../../const/Constant";
 import {booksListData, isPurchasedList} from "../BookDataAction";
+import {tablePagination} from "../SwitchPageAction";
 
 export const findBooksBy = (urlString) => {
     let responseStatus = null;
@@ -21,7 +22,8 @@ export const findBooksBy = (urlString) => {
                 if (responseStatus === 200) {
                     dispatch(clientRequest(''));
                     dispatch(isPurchasedList(false));
-                    dispatch(booksListData(data))
+                    dispatch(booksListData(data.books || [data]));
+                    dispatch(tablePagination(data.pageInfo || undefined))
                 }else{
                     dispatch(clientRequest(errorMessage, responseStatus));
                 }

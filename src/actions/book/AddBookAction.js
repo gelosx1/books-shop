@@ -20,7 +20,8 @@ export const addBook = (book, list) => {
             .then(data => {
                 if (responseStatus === 200 && data) {
                     dispatch(clientRequest(''));
-                    dispatch(booksListData([...list,book]))
+                    list.unshift(book);
+                    dispatch(booksListData(list))
                 }else{
                     dispatch(clientRequest(errorMessage, responseStatus));
                 }

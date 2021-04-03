@@ -17,16 +17,16 @@ function Login(props) {
 
     if (!props.user) {
         return (
-            <div>
+            <div className={'relog-main{'}>
                 <h1>Books Shop account</h1>
                 <h2>Login</h2>
-                <form onSubmit={submitLogin}>
+                <form className={'reg-form'} onSubmit={submitLogin}>
                     <input type="text" name={'login'} placeholder={'login'}/>
                     <input type="password" name={'password'} placeholder={'password'}/>
                     <button className={'btn-info mb-5'} type={'submit'}>Log in</button>
                 </form>
-                <h4>Have no account? Register now</h4>
-                <Link to={'/register'} className={'link'}><p className={'link'}>Register</p></Link>
+                <div className={'relog'}><h4>Have no account? Register now</h4>
+                    <Link to={'/register'} className={'link'}><p className={'link'}>Register</p></Link></div>
                 <Footer/>
             </div>
         );
